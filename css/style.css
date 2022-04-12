@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{ text-decoration: none; }
+#header{
+
+	border-bottom: 1px solid #8db1ab;
+}
+.icon img{ height: 50px;
+  width: 50px;
+  background-color: #8db1ab;
+  color: black;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 16px;
+  position: relative;
+  z-index: 9999; }
+  .icon img::after{content: '';
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: 1px solid white;
+    background: transparent;
+    z-index: -1;
+     position: absolute;
+    top: -5px;
+    left: -5px;}
+
+.ml-2{display: block;
+    line-height: 1opx;
+    text-align: center;
+    color: #8db1ab;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+ .navbar-brand small{
+ 	display: block;
+    font-size: 12px;
+    color: #8db1ab;
+    font-weight: 700;
+    letter-spacing: 0px;
+ }
+ .navbar-nav {
+ 	text-align: center;
+ }
+ .active{
+ 	 color:#8db1ab !important ;
+ }
+ .nav-link{
+ 	ont-size: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:#000 ;
+    font-weight: 600;
+
+ }
+ .nav-link:hover{
+ 	color:#000 !important;
+ }
+ #content{width: 100%;
+    padding: 50px 0px;
+border-bottom: 1px solid #8db1ab;}
+ .main-content{
+     position: relative;
+   transition: 0.5S;
+   margin: 10px 0px;
+ }
+.main-content::before{
+ content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   bottom: 0;
+   left: 0;
+   background-color:blue;
+   opacity: 0;
+   color: #37433b;
+}
+.main-content:hover{
+     opacity:0.7;
+   transition: 0.5S;
+}
+.overlay{
+    position:absolute;
+   bottom: 50%;
+   left: 50%;
+   opacity: 0;
+}
+.main-content:hover .overlay{
+    opacity: 1;
+   transition: 0.5s;
+   transform: translateY(-15px);
+}
+#footer{
+    width: 100%;
+    padding: 50px 0px;
+}
+.foothead a{
+    text-decoration: none;
+    color: #000000;
+}
+.foothead h2{
+        font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.foothead p{
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+        font-size: 16px;
+}
+.foothead ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 32px;
+       
+}
+.foothead ul li a i {
+     color: rgba(0, 0, 0, 0.9);
+}
+
+.social h2{
+     font-size: 22px;
+    font-weight: 700;
+    color: #000000; 
+    margin-bottom: 24px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.link ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #000000; 
+}
+.link ul li a{
+    color: rgba(0,0,0,.9);
+}
+.link ul li a:hover{
+    color: #8db1ab;
+}
